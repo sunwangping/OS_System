@@ -302,6 +302,7 @@ public class MainFrame extends JFrame {
 			fatList = fats;
 			isFile = true;
 			n = fats.size();
+			System.out.println(n);
 			jp1.setPreferredSize(new Dimension(482, FileSystemUtil.getHeight(n)));
 			jLabel = new MyJLabel[n];
 			for (int i=0; i<n; i++){

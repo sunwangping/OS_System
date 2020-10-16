@@ -106,6 +106,7 @@ public class OpenFileJFrame extends JFrame {
 	 */
 	private void save(){
 		length = jta1.getText().length();
+		System.out.println(length);
 		if (length > ((File)fat.getObject()).getLength()-8){
 			//添加内容的
 			int num = FileSystemUtil.getNumOfFAT(length);
